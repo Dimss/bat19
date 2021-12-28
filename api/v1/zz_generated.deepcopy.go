@@ -13,7 +13,7 @@ import (
 func (in *WhPlatform) DeepCopyInto(out *WhPlatform) {
 	*out = *in
 	out.TypeMeta = in.TypeMeta
-	in.ListMeta.DeepCopyInto(&out.ListMeta)
+	in.ObjectMeta.DeepCopyInto(&out.ObjectMeta)
 	out.Spec = in.Spec
 	out.Status = in.Status
 }

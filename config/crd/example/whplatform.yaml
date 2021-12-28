@@ -1,0 +1,6 @@
+apiVersion: whpd.mlops.cnvrg.io/v1
+kind: WhPlatform
+metadata:
+  name: foo-bar
+spec:
+  foo: "Hello world!"
