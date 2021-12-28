@@ -20,12 +20,13 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
-
+// ChaosPodSpec defines the desired state of ChaosPod
 type WhPlatformSpec struct {
 	Foo string `json:"foo,omitempty"`
 }
 
-
+// ChaosPodStatus defines the observed state of ChaosPod.
+// It should always be reconstructable from the state of the cluster and/or outside world.
 type WhPlatformStatus struct {
 	Message string `json:"message,omitempty"`
 }
